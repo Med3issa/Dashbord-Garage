@@ -4,8 +4,8 @@
     <div class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
-                
-                <div class="col-sm-6">
+
+                <div class="col-sm-12">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a [routerLink]="['']">Home</a></li>
                         <li class="breadcrumb-item active">Add Car</li>
@@ -39,7 +39,8 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Matricule</label>
-                                        <input type="text" class="form-control" id="matricule" placeholder="123 tu 1234">
+                                        <input type="text" class="form-control" id="matricule"
+                                            placeholder="123 tu 1234">
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Kilometrage</label>
@@ -47,8 +48,70 @@
                                             placeholder="Kilometrage">
                                     </div>
 
-                                   
-                                    
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">les prochaine changement </label><br>
+
+
+                                        <table class="table table-striped table-valign-middle">
+                                            <tr>
+                                                <td> <input type="text" class="form" id="boujie" placeholder="boujie">
+                                                </td>
+                                                <td> <input type="text" class="form" id="chaine" placeholder="chaine">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="text" class="form" id="filtre" placeholder="filtre">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form" id="vidange" placeholder="vidange">
+                                                </td>
+                                            </tr>
+
+                                           
+                                            
+                                            <tr>
+                                                <td><input type="text" class="form" id="pneu" placeholder="pneu"></td>
+                                                
+                                            
+                                            </tr>
+                                        </table>
+
+
+
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">les prochaines payements </label><br>
+
+
+                                        <table class="table table-striped table-valign-middle">
+                                            <tr>
+                                                <td> <input type="text" class="form" id="assurance" placeholder="assurance">
+                                                </td>
+                                                <td> <input type="text" class="form" id="leasing" placeholder="leasing">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="text" class="form" id="taxe" placeholder="taxe">
+                                                </td>
+                                                <td>
+                                                    <label >visite </label> <input type="date" class="form" id="visite" placeholder="visite">
+                                                </td>
+                                            </tr>
+
+                                           
+                                            
+                                         
+                                        </table>
+
+
+
+
+                                    </div>
+
                                 </div>
                                 <!-- /.card-body -->
 
