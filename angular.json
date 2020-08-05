@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Dashbord-Garage"
+    }
+  },
+  "defaultProject": "Dashbord-Garage",
+  "cli": {
+    "analytics": false
+  }
 }

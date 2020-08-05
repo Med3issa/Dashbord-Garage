@@ -1,0 +1,168 @@
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      
+    </ul>
+
+    
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a [routerLink]="['']" class="brand-link">
+      <img src="assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Gestion de Garage</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      
+     
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+      
+          <li  class="nav-item ">
+            <a [routerLink]="['/cars']" class="nav-link">
+                
+              <p >
+                <i class="fas fa-car-alt"></i>      Liste Des Voitures
+              </p>
+            </a>
+            
+          </li>
+
+          <li  class="nav-item ">
+            <a [routerLink]="['/users']" class="nav-link">
+                
+              <p >
+                <i class="fas fa-user-friends"></i>      Liste Des utilisateurs
+              </p>
+            </a>
+            
+          </li>
+
+     
+          <li class="nav-header">SERVICE CURATIF</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Curatif
+                <i class="fas fa-angle-left right"></i>
+                <span class="badge badge-info right">6</span>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a [routerLink]="['/cur/boujie']"  class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Boujie</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a  [routerLink]="['/cur/pneu']" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pneu</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a  [routerLink]="['/cur/chaine']" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Chaine</p>
+                </a>
+              </li>
+             
+              <li class="nav-item">
+                <a  [routerLink]="['/cur/vidange']" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Vidange <small>+ Filtre</small></p>
+                </a>
+              </li>
+             
+              
+            </ul>
+          </li>
+          
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Documentation
+              </p>
+              <i class="fas fa-angle-left right"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a [routerLink]="['/doc/assurance']" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Assurance</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="['/doc/taxe']" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Taxe</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="['/doc/leasing']" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Leasing</p>
+                </a>
+              </li>
+             
+              <li class="nav-item">
+                <a [routerLink]="['/doc/visite']" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Visite Technique </p>
+                </a>
+              </li>
+             
+              
+            </ul>
+          </li>
+
+          <li class="nav-header">ENTRETIEN</li>
+          <li class="nav-item">
+            <a [routerLink]="['entretien']" class="nav-link">
+              <i class="fas fa-circle nav-icon"></i>
+              <p>Level 5</p>
+            </a>
+          </li>
+
+          <li class="nav-header">UTILISATEUR</li>
+          <li class="nav-item">
+            <a  [routerLink]="['add-car']"  class="nav-link">
+              <i class="nav-icon far fa-circle text-info"></i>
+              <p>Ajouter une voiture</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['add-user']" class="nav-link">
+              <i class="nav-icon far fa-circle text-warning"></i>
+              <p>Ajouter un utilisateur</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-danger"></i>
+              <p>Deconnecter</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
